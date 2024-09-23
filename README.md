@@ -1,7 +1,7 @@
 # PRODIGY_CS_01
 ![Task 1](https://github.com/user-attachments/assets/0f57ee74-c9eb-4d91-a6fc-8e2dc4e50692)
 
-The given task was to implement a Ceaser Cipher in Python.
+The given task was to implement a Caeser Cipher in Python.
 Tkinter has been used to provide an UI.
 The program has the ability to both encrypt and decrypt the given texts.
 
