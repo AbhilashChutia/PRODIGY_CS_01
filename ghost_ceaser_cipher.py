@@ -15,18 +15,18 @@ def decrypt(text, shift):
     return encrypt(text, -shift)
 
 def encrypt_message():
-    message = message_text.get("1.0", "end-1c")  # Get text from Text widget
+    message = message_text.get("1.0", "end-1c") 
     shift_value = int(shift_entry.get())
     encrypted_message = encrypt(message, shift_value)
-    result_text.delete("1.0", tk.END)  # Clear previous result
-    result_text.insert(tk.END, encrypted_message)  # Insert encrypted message into result text widget
+    result_text.delete("1.0", tk.END)
+    result_text.insert(tk.END, encrypted_message) 
 
 def decrypt_message():
-    message = message_text.get("1.0", "end-1c")  # Get text from Text widget
+    message = message_text.get("1.0", "end-1c")
     shift_value = int(shift_entry.get())
     decrypted_message = decrypt(message, shift_value)
-    result_text.delete("1.0", tk.END)  # Clear previous result
-    result_text.insert(tk.END, decrypted_message)  # Insert decrypted message into result text widget
+    result_text.delete("1.0", tk.END) 
+    result_text.insert(tk.END, decrypted_message)
 
 window = tk.Tk()
 window.title("Ghost: A Caesar Cipher Tool")
